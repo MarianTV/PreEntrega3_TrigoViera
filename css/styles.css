@@ -1,281 +1,218 @@
 /* reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-
-  /*header*/ 
+/*header*/
 ul {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    position: absolute;
-    top: 40px;
-    right: 0px;  
-}
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: absolute;
+  top: 40px;
+  right: 0px; }
 
-
-
-
-
-/*main*/ 
-
-header, main{
-    max-width: 1100px;
-    margin: auto;
-}
-
-
+/*main*/
+header, main {
+  max-width: 1100px;
+  margin: auto; }
 
 h1 {
-    font-family:'Arvo', serif;
-    font-weight: 700;
-    font-size: 40px; 
-    text-align: center; 
-    padding-bottom: 50px;
-    padding-top: 50px;
-    letter-spacing: -1px;
-}
-
-h1.semana{
-    padding-bottom: 5px;
-}
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  letter-spacing: -1px; }
+  h1.semana {
+    padding-bottom: 5px; }
 
 h2 {
-    font-family:'Arvo', serif;
-    font-weight: 400;
-    font-size: 30px;
-    letter-spacing: -1px;
-}
-
-h2.recetas {
-    font-family:'Arvo', serif;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -1px;
+  line-height: 1.1; }
+  h2.recetas {
     font-weight: 700;
-    font-size: 25px; 
-    letter-spacing: -1px;
-    padding: 0px;
-}
+    padding-bottom: 10px; }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif; 
-    font-weight: 700;
-    font-size: 13px; 
-    background-color: black;
-    padding: 7px;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    max-width: max-content ;
-    margin: auto;
-    position: relative;
-    top: -18px;
-    right: 0px;
-}
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  background-color: black;
+  padding: 7px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: max-content;
+  margin: auto;
+  position: relative;
+  top: -18px;
+  right: 0px; }
 
 h4 {
-    font-family: Arial, Helvetica, sans-serif; 
-    font-size: 17px;
-    padding-bottom: 10px;
-}
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-bottom: 10px; }
 
 p {
-    font-family:Georgia, 'Times New Roman', Times, serif ; 
-    font-size: 14px; 
-    line-height: 1.5; 
-}
-
-p.servicios {
-    padding-right: 35px; 
-}
-
-p.ultimo {
-    padding-bottom: 30px;
-}
-
-p.coccion{
-    border-bottom: 1px solid #dadada;
-    max-width: fit-content;
-    font-family: arial;
-    padding-bottom: 10px;
-}
-
-p.texto_coccion{
-    padding-top: 20px;
-}
-
-p.semana{
-    font-family:Georgia, 'Times New Roman', Times, serif ; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 1.45; }
+  p span {
+    font-weight: 700; }
+  p.servicios {
+    padding-right: 35px; }
+  p.ultimo {
+    padding-bottom: 30px; }
+  p.semana {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
     text-align: center;
     padding-bottom: 50px;
-    border-bottom: 1px solid #b7b7b7;
-    margin-bottom:0px;
+    margin-bottom: 0px; }
+  p.coccion {
+    border-bottom: 1px solid #dadada;
+    max-width: fit-content;
+    padding-bottom: 5px; }
+  p.texto_coccion {
+    padding-top: 20px; }
+    p.texto_coccion span {
+      font-weight: 700; }
 
-}
+#texto_home {
+  padding-left: 40px; }
 
-#texto_home{
-    padding-left: 40px;
-}
+#solofilete {
+  border-bottom: 1px solid #b7b7b7; }
 
-#contenedor_home{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 40px;
-}
+#contenedor_home {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px; }
 
-#contenedor_servicios{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 40px;
-}
+#contenedor_servicios {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
+  gap: 40px; }
 
-#contenedor_recetas{
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #b7b7b7;
-    padding-bottom: 100px;
-    padding-top: 30px; 
-}
-
+#contenedor_recetas {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #b7b7b7;
+  padding-bottom: 100px;
+  padding-top: 30px; }
 
 /*formulario*/
+#contenedor_formulario {
+  background-color: #ececec;
+  padding: 15px;
+  margin-bottom: 70px; }
 
-#contenedor_formulario{
-    background-color: #ececec;
-    border-bottom: 1px solid #b7b7b7;
-    padding: 15px;
-}
+#nombre, #email, #telefono, #consulta {
+  background-color: #fff;
+  margin: 15px;
+  height: 30px;
+  padding: 8px; }
 
-#nombre, #email, #telefono, #consulta{
-    background-color: #fff;
-    margin: 15px;
-    height:30px;
-    padding: 8px;
-}
+#consulta {
+  height: 150px; }
 
-#consulta{height:150px;
-}
+#btn_formulario {
+  background-color: #e4e4e4;
+  border: 1px solid #b7b7b7;
+  max-width: fit-content;
+  margin: auto; }
 
-p.formulario{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+p.formulario {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif; }
 
-#btn_formulario{
-    background-color: #e4e4e4;
-    border:1px solid #b7b7b7;;
-    max-width: fit-content;
-    margin: auto;
-}
+p.formulario2 {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #adabab;
+  font-weight: bold;
+  height: 15px;
+  padding: 5px;
+  text-align: center; }
 
-p.formulario2{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(173, 171, 171);
-    font-weight: bold;
-    height:30px;
-    padding: 5px;
-    text-align: center;
-}
+#texto_receta1, #texto_receta2, #texto_receta3 {
+  padding-left: 40px; }
 
-#texto_receta1, #texto_receta2, #texto_receta3{
-    padding-left: 40px;
-}
-
-#local{
-    padding-bottom: 30px;
-}
+#local {
+  padding-bottom: 30px; }
 
 /*footer*/
-
-#contenedor_footer{
-    display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
-    gap: 50px;
-    justify-content: center; 
-    border-top: 1px solid #b7b7b7;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
+#contenedor_footer {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  gap: 50px;
+  justify-content: center;
+  border-top: 1px solid #b7b7b7;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 h5 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px; color: #000;
-    font-weight: 700;
-    text-align: center;}
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+  text-align: center; }
 
 h6 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color: #595858 ;
-    text-align: center; 
-}
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #595858;
+  text-align: center; }
+  h6 span {
+    font-weight: 700; }
 
-h6 span {
-    font-weight: 700; 
-}
-
-@media screen and (max-width: 678px){
-
-#contenedor_home, #contenedor_servicios, #contenedor_recetas{
-    flex-direction: column;
-
-}
-
-
-#texto_home{
-    padding: 20px 15px;
-}
-
-img {
-    width: 100%;
-}
-
-h1{
+@media screen and (max-width: 678px) {
+  #contenedor_home, #contenedor_servicios, #contenedor_recetas {
+    flex-direction: column; }
+  #texto_home {
+    padding: 20px 15px; }
+  img {
+    width: 100%; }
+  h1 {
     font-size: 35px;
-    padding-bottom: 20px; 
-    line-height: 1.1;
-}
-
-h2{
-    font-size: 28px; 
-}
-
-p.semana{
-    padding-bottom: 20px;margin-bottom:0px
-}
-
-p.servicios {
-    padding: 0px 15px 45px 15px; 
-}
-
-p.texto_coccion {
-    padding: 0px; 
-}
-
-
-h2.recetas{
-    line-height: 1.1;
-}
-
-#texto_receta1, #texto_receta2, #texto_receta3, div#local {
-    padding: 25px 15px 0px 15px;
-
-}
-
-div#contenedor_recetas{
- padding: 0px 0px 80px   
-}
-
-#contenedor_footer{
+    padding-bottom: 20px;
+    line-height: 1.1; }
+  h2 {
+    font-size: 28px; }
+  p.semana {
+    padding-bottom: 20px;
+    margin-bottom: 0px; }
+  p.servicios {
+    padding: 15px 15px 30px 15px; }
+  p.texto_coccion {
+    padding: 0px; }
+  #texto_receta1, #texto_receta2, #texto_receta3, div#local {
+    padding: 25px 15px 0px 15px; }
+  div#contenedor_recetas {
+    padding: 0px 0px 80px; }
+  #contenedor_footer {
     display: grid;
     grid-template-columns: none;
     gap: 0px;
-    justify-content: center; 
+    justify-content: center; } }
 
-}
-}
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 25px; }
+  h3 {
+    padding: 3px 15px;
+    max-width: none;
+    text-align: left;
+    position: static; }
+  h5, h6 {
+    text-align: left; }
+  #contenedor_footer {
+    justify-content: left;
+    margin: 0px 15px; } }
