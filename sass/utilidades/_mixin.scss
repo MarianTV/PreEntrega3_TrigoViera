@@ -1,0 +1,24 @@
+// mixin sin parametros
+
+@mixin filete_gris {
+    border-bottom: 1px solid #dadada;
+    max-width: fit-content;
+}
+
+@mixin filete_negro {
+    border-bottom: 1px solid #acacac
+;
+    max-width: 1260px;
+}
+
+@mixin links {
+    color: black;
+    text-decoration: none;
+}
+
+@mixin boton {
+    background-color: #e4e4e4;
+    margin: auto;
+    border: 1px solid #dadada;
+    max-width: fit-content;
+}
