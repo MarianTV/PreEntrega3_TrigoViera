@@ -22,3 +22,65 @@
     border: 1px solid #dadada;
     max-width: fit-content;
 }
+
+
+@mixin h1{
+    font-family:$tipografia_h1;
+    font-weight: 700;
+    font-size: 40px; 
+    text-align: center; 
+    padding-bottom: 50px;
+    padding-top: 50px;
+    letter-spacing: -1px;
+}
+
+@mixin h2{
+    font-family:$tipografia_h2;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+@mixin h3{
+    font-family: $tipografia_h3; 
+    font-weight: 700;
+    font-size: 13px; 
+    background-color: $color_principal;
+    padding: 7px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: max-content ;
+    margin: auto;
+    position: relative;
+    top: -18px;
+    right: 0px;
+}
+
+@mixin h4{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+@mixin h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    color: #000;
+    font-weight: 700;
+    text-align: center; 
+}
+
+
+@mixin h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #595858 ;
+    text-align: center; 
+}
+
+@mixin contenedores {
+    display: flex;
+    flex-direction: row;
+}

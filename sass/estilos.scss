@@ -24,69 +24,43 @@ header, main{
         right: 0px; 
     }
     h1{
-        font-family:$tipografia_titulosprincipales;
-        font-weight: 700;
-        font-size: 40px; 
-        text-align: center; 
-        padding-bottom: 50px;
-        padding-top: 50px;
-        letter-spacing: -1px;
+        @include h1;
         &.semana{
             padding-bottom: 5px;
         }
     }
     h2{
-        font-family:$tipografia_titulossecundarios;
-        font-weight: 400;
-        font-size: 28px;
-        letter-spacing: -1px;
-        line-height: 1.1;
+        @include h2;
         &.recetas{
-        font-weight: 700;
-        padding-bottom: 10px;
+        font-weight:700;
         }
     }
     h3{
-        font-family: Arial, Helvetica, sans-serif; 
-        font-weight: 700;
-        font-size: 13px; 
-        background-color: $color_principal;
-        padding: 7px;
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-        max-width: max-content ;
-        margin: auto;
-        position: relative;
-        top: -18px;
-        right: 0px;
+        @include h3;
     }
     
     
     h4 {
-        font-family: Arial, Helvetica, sans-serif; 
-        font-size: 17px;
-        padding-bottom: 10px;
+        @include h4;
     }
     
     p {
-        font-family:Georgia, 'Times New Roman', Times, serif ; 
+        font-family:$tipografia_p; 
         font-size: 15px; 
         line-height: 1.45; 
         span{
             font-weight: 700;
             }
         &.servicios {
-            padding-right: 35px;
+            margin-top: 0px;
             }
         &.ultimo{
             padding-bottom: 30px;
         }
         &.semana{
-            font-family:Georgia, 'Times New Roman', Times, serif ; 
             font-size: 17px;
             text-align: center;
-            padding-bottom: 50px;
+            padding-bottom:50px;
             margin-bottom:0px;
             }
         &.coccion{
@@ -111,24 +85,21 @@ header, main{
 }
 
 #contenedor_home{
-    display: flex;
-    flex-direction: row;
+    @include contenedores;
     padding-bottom: 40px;
 }
 
 #contenedor_servicios{
-    display: flex;
-    flex-direction: row;
+    @include contenedores;
     padding-bottom: 40px;
     gap: 40px;
 }
 
 #contenedor_recetas{
-    display: flex;
-    flex-direction: row;
+    @include contenedores;
+    @include filete_negro;
     padding-bottom: 100px;
     padding-top: 30px; 
-    @include filete_negro;
 }
 
 /*formulario*/
@@ -140,7 +111,7 @@ header, main{
     p {
         &.formulario{
         font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;}
+        font-family: $tipografia_p;}
         &.formulario2{
         font-size: 15px;
         font-family: Arial, Helvetica, sans-serif;
@@ -189,17 +160,11 @@ header, main{
     padding-top: 20px;
     padding-bottom: 20px;
     h5 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px; 
-        color: #000;
-        font-weight: 700;
-        text-align: center;}
+        @include h5;
+    }
     
     h6 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 13px;
-        color: #595858 ;
-        text-align: center; 
+        @include h6; 
         span {
             font-weight: 700;} 
     }
@@ -226,7 +191,7 @@ img {
 
 h1{
     font-size: 35px;
-    padding-bottom: 20px; 
+    padding-bottom:20px; 
     line-height: 1.1;
 }
 
@@ -236,14 +201,14 @@ h2{
 
 p{
     &.semana{
-    padding-bottom: 20px;margin-bottom:0px
-    }
-    &.servicios {
-    padding: 15px 15px 30px 15px; 
+        padding-bottom:30px;
     }
     &.texto_coccion {
-    padding: 0px; 
+        padding: 0px; 
     }
+    &.servicios{
+        margin: 0px 5px 40px 15px;
+        }
 }
 
 
@@ -267,6 +232,10 @@ div#contenedor_recetas{
 
 @media screen and (max-width:500px){
 
+    h1{
+        padding-bottom: 10px;    
+    }
+    
     h2{
         font-size: 25px;    
     }
@@ -282,8 +251,8 @@ div#contenedor_recetas{
         text-align: left;
     }
 
+        
     #contenedor_footer{
-        justify-content: left;
         margin: 0px 15px;
     }
 
